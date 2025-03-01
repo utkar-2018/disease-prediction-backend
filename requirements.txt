@@ -2,3 +2,5 @@ flask
 numpy
 joblib
 scikit-learn
+gunicorn
+gunicorn -w 4 -b 0.0.0.0:$PORT app:app
